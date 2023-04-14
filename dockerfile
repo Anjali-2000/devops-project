@@ -1,5 +1,3 @@
-FROM ubuntu
-RUN apt update
-RUN apt install apache2 -y
+FROM anjalichavan/docker-assignment3
 COPY index.html /var/www/html/
 ENTRYPOINT apachectl -D FOREGROUND
